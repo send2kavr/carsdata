@@ -1,0 +1,34 @@
+CarsDataPresentation
+========================================================
+author: send2kavr 
+date: 8/2/2018
+autosize: true
+
+========================================================
+
+Slide - 1 Analysis of mtcars data available in datasets library. ========================================================
+
+```{r}
+cars_data <- mtcars
+summary(cars_data)
+```
+
+Slide With Plot - Relation between number of Cylinder and MPG
+========================================================
+
+```{r, echo=FALSE}
+plot(cyl ~ mpg,data = cars_data, xlab = "Millions Per Gallons", ylab = "Number of Cylinders",col = "blue", pch = 22)
+```
+
+Slide - 2 Relation between number of HP and MPG
+========================================================
+```{r, echo=FALSE}
+plot(hp ~ mpg,data = cars_data, xlab = "Millions Per Gallons", ylab = "hp",col = "blue", pch = 22)
+```
+
+Slide - 3 Relation between number of HP and am
+========================================================
+```{r, echo=FALSE}
+plot(hp ~ am,data = cars_data, xlab = "automatic or manual", ylab = "hp",col = "blue", pch = 22)
+```
+
